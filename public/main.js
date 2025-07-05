@@ -8,8 +8,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   };
 
   try {
-    // Simulasi dummy pengiriman
-    const res = await fetch("api/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -18,9 +17,11 @@ document.getElementById("contactForm").addEventListener("submit", async function
     if (res.ok) {
       document.getElementById("responseMsg").classList.remove("hidden");
       form.reset();
+    } else {
+      alert("Gagal mengirim pesan.");
     }
   } catch (err) {
-    alert("Gagal mengirim pesan.");
+    alert("Terjadi kesalahan.");
     console.error(err);
   }
 });
