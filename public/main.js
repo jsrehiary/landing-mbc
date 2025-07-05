@@ -1,6 +1,14 @@
 document.getElementById("contactForm").addEventListener("submit", async function (e) {
   e.preventDefault();
+
   const form = e.target;
+  const responseMsg = document.getElementById("responseMsg");
+  const errorMsg = document.getElementById("errorMsg");
+
+  // Reset pesan
+  responseMsg.classList.add("hidden");
+  errorMsg.classList.add("hidden");
+
   const data = {
     name: form.name.value,
     email: form.email.value,
@@ -15,13 +23,13 @@ document.getElementById("contactForm").addEventListener("submit", async function
     });
 
     if (res.ok) {
-      document.getElementById("responseMsg").classList.remove("hidden");
+      responseMsg.classList.remove("hidden");
       form.reset();
     } else {
-      alert("Gagal mengirim pesan.");
+      errorMsg.classList.remove("hidden");
     }
   } catch (err) {
-    alert("Terjadi kesalahan.");
+    errorMsg.classList.remove("hidden");
     console.error(err);
   }
 });

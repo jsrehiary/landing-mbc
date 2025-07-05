@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public")); // frontend di-serve dari public/
 
 // Endpoint POST untuk form kontak
-app.post("/contact", async (req, res) => {
+app.post("/api/contact", async (req, res) => {
     const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
