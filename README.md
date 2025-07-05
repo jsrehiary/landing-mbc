@@ -55,7 +55,7 @@ landing-mbc/
 
 4. **Jalankan server**
    ```bash
-   node server/index.js
+   node run dev
    ```
 
 5. **Akses di browser**
@@ -93,11 +93,6 @@ Express Server (Node.js)
 Nodemailer → Gmail SMTP → Email Masuk ke Admin
 ```
 
----
-
-## 📸 Screenshot Tampilan
-
-(*Tambahkan screenshot halaman utama, divisi, kontak, dan developer pada repo GitHub atau PDF dokumen.*)
 
 ---
 
@@ -105,7 +100,7 @@ Nodemailer → Gmail SMTP → Email Masuk ke Admin
 
 **Nama:** Jose Rehiary  
 **Skill:** Web Development, Cybersecurity, Reverse Engineering  
-**GitHub:** [github.com/yourusername](https://github.com/yourusername)  
+**GitHub:** [github.com/yourusername](https://github.com/jsrehiary)  
 **Sertifikasi:**  
 - Software & Game Development  
 - Junior Mobile Computing  
@@ -118,7 +113,6 @@ Nodemailer → Gmail SMTP → Email Masuk ke Admin
 |----------|--------------|--------|
 | Frontend | Netlify      | ✅ Online |
 | Backend  | Railway/Vercel | ✅ Online |
-| Domain   | (opsional)   | - |
 
 ---
 
@@ -131,7 +125,7 @@ Nodemailer → Gmail SMTP → Email Masuk ke Admin
 
 ## 📌 Catatan
 
-- Website ini dibuat sebagai tugas proyek untuk MBC Lab
+- Website ini dibuat sebagai tugas proyek untuk Technical Test MBC Laboratory Assitant
 - Semua data non-sensitif dan dummy digunakan untuk demo
 
 ---

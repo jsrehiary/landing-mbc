@@ -17,3 +17,5 @@ yarn-error.log*
 # Optional editor settings
 .vscode/
 .idea/
+
+test-send.js
